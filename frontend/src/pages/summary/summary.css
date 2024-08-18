@@ -1,0 +1,98 @@
+.summary {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(37, 95, 115);
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    padding: 20px;
+    color: wheat;
+}
+
+.text-section {
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: rgb(107, 162, 189);
+}
+
+.text-para {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-para > h2 {
+    margin-bottom: 20px;
+}
+
+.textbox {
+    outline: none;
+    border: none;
+    padding: 20px;
+    resize: none;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.instruction {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.response > h2 {
+    margin-bottom: 20px;
+}
+
+.summarybox {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.button {
+    margin-top: 25px;
+}
+
+.button button {
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(111, 111, 200);
+    color: white;
+    cursor: pointer;
+    transition: color 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+.button button:hover {
+    background-color: rgb(24, 24, 93);
+    color: wheat;
+}

@@ -1,0 +1,48 @@
+.navbar {
+    background-color: bisque;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 80px;
+}
+
+.item-list li {
+    color: rgb(28, 28, 118);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.item-list li a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.item-list li a:hover {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
