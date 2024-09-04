@@ -32,7 +32,7 @@ const Register = () => {
 
             setPassword('')
 
-            toast.success('Registration successfull', {
+            toast.success(response.data.message, {
                 position: "top-right",
                 autoClose: 3000
             })
