@@ -2,19 +2,25 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./summary.css";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/ReactToastify.css'
 
 const Summary = () => {
   const [response, setResponse] = useState("");
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
-  const summaryRoute = process.env.REACT_APP_API_URL
 
   const handleClick = async (e) => {
     e.preventDefault();
+    if (!text.trim()) {
+      alert('Please enter some text to summarize.')
+      return
+    }
     setLoading(true);
     try {
       const response = await axios.post(
-        summaryRoute,
+        process.env.REACT_APP_API_URL + '/summarize',
         {
           text: text,
         },
@@ -27,7 +33,10 @@ const Summary = () => {
       const summary_text = response.data.summary_text;
       setResponse(summary_text);
     } catch (error) {
-      console.error("Error fetching data ", error);
+      toast.error(error.response.data.message, {
+        position: "top-right",
+        autoClose: 3000
+    })
     } finally {
       setLoading(false);
     }
@@ -46,7 +55,7 @@ const Summary = () => {
             <textarea
               name=""
               className="textbox"
-              rows={20}
+              rows={30}
               cols={70}
               placeholder="Enter your text"
               onChange={(e) => setText(e.target.value)}
@@ -75,6 +84,8 @@ const Summary = () => {
             <button onClick={handleClick}>Summarize</button>
         </div>
       </div>
+      <Footer />
+      <ToastContainer />
     </div>
   );
 };

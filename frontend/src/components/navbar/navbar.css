@@ -1,48 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .navbar {
-    background-color: bisque;
-    padding: 10px 40px;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
+    margin-left: 50px;
 }
 
-.logo img {
-    width: 200px;
-    cursor: pointer;
+.logo h1 {
+    font-family: "Itim", cursive;
+    color: black;
+    font-size: 48px;
 }
 
 .logo a {
     text-decoration: none;
 }
 
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+
 .item-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 80px;
 }
 
 .item-list li {
-    color: rgb(28, 28, 118);
+    font-family: "Itim", cursive;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 5px 0px;
 }
 
 .item-list li a {
     text-decoration: none;
-    padding: 5px 10px;
+    color: black;
+    padding: 5px 0px;
 }
 
 .item-list li a:hover {
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    color: #0958A1;
+    transition: color 0.3s ease-in-out;
 }

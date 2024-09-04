@@ -1,20 +1,31 @@
 .about {
     height: 100vh;
-    width: 100vw;
-    background-color: rgb(152, 152, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-info {
+    background-color: #539984;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(100vh - 150px);
 }
 
 .info-header {
     text-align: center;
     font-size: 30px;
     margin: 20px 30vh;
+    font-family: "Happy Monkey", system-ui;
 }
 
 .info-para {
+    font-family: "Itim", cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 50px;
 }

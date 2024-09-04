@@ -1,18 +1,22 @@
 .summary {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(37, 95, 115);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .information {
+    background-color: #539984;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
+    padding: 40px 0px;
 }
 
 .title {
     padding: 20px;
-    color: wheat;
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
 }
 
 .text-section {
@@ -21,7 +25,7 @@
     width: 80%;
     padding: 20px 40px;
     border-radius: 20px;
-    background-color: rgb(107, 162, 189);
+    /* background-color: rgb(107, 162, 189); */
 }
 
 .text-para {
@@ -76,23 +80,20 @@
     border-radius: 10px;
 }
 
-.button {
-    margin-top: 25px;
-}
-
 .button button {
     padding: 10px 30px;
     font-size: 20px;
     border-radius: 12px;
     outline: none;
     border: none;
-    background-color: rgb(111, 111, 200);
-    color: white;
+    background-color: #AAD9E8;
     cursor: pointer;
     transition: color 1s ease-in-out, background-color 1s ease-in-out;
 }
 
 .button button:hover {
-    background-color: rgb(24, 24, 93);
+    background-color: #099AC9;
     color: wheat;
+    box-shadow: 4px 8px 6px 2px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }

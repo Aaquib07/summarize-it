@@ -11,6 +11,7 @@
     "asynckit": "^0.4.0",
     "axios": "^1.7.4",
     "balanced-match": "^1.0.2",
+    "bcryptjs": "^2.4.3",
     "binary-extensions": "^2.3.0",
     "body-parser": "^1.20.2",
     "brace-expansion": "^1.1.11",
@@ -62,6 +63,7 @@
     "is-extglob": "^2.1.1",
     "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
     "media-typer": "^0.3.0",
     "merge-descriptors": "^1.0.1",
     "methods": "^1.1.2",
@@ -69,6 +71,7 @@
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "minimatch": "^3.1.2",
+    "mongoose": "^8.5.3",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
     "nodemon": "^3.1.4",
@@ -106,10 +109,10 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
