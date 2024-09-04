@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './navbar.css'
-import { Link, useNavigate } from 'react-router-dom'
-import Logo from '../../assets/Summarize-it.png'
+import { Link } from 'react-router-dom'
 import { useAuth } from '../../context/auth/AuthContext'
 
 const Navbar = () => {
